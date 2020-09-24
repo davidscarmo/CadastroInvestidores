@@ -1,0 +1,115 @@
+.page-header
+{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "top-bar"
+    "header-content";
+    max-height: 400px;
+    max-width: 100%;
+}
+
+.logo-area p 
+{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.top-bar-container 
+{
+    grid-area: top-bar;
+    height: 100px;
+    width: 100%;
+    background-color: #222222;
+    display: grid;
+    grid-template-areas: "back logo-area";
+    grid-template-columns: 10% 80%;  
+}
+
+.back
+{
+    grid-area: back;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.back p
+{
+    margin: 0.2rem 0;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+}
+.logo-area
+{
+    grid-area: logo-area;
+    align-self: center;
+
+}
+.logo-area img 
+{
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    width: 96px;
+}
+.header-content
+{
+    grid-area: header-content;
+    background-color: #666666;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content p 
+{
+    color: #FFFFFF;
+    max-height: 200px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.button-area 
+{
+    margin: 1.2rem auto;
+    width: 180px;
+    height: 56px;
+}
+.button-area2 
+{
+    margin: 1.2rem auto;
+    width: 100px;
+    height: 56px;
+}
+.button-area button, .button-area2 button
+{
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #222222;
+    color: #FFFFFF;
+    border: none;
+}
+.footer
+{
+    grid-area: footer;
+    width: 100%;
+    background-color: #222222;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p
+{
+    text-align: center;
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
